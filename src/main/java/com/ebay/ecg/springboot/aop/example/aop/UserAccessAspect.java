@@ -19,8 +19,9 @@ public class UserAccessAspect {
     //What kind of method calls I would intercept
     //execution(* PACKAGE.*.*(..))
     //Weaving & Weaver
-    @Pointcut("execution(* com.ebay.ecg.springboot.aop.example.aop.data.*.*(..))")
+    @Pointcut("execution(* com.ebay.ecg.springboot.aop.example.aop.data.Dao1.retrieveSomething(..))")
     public void pointCut() {
+
     }
 
     //    @Before("execution(* com.in28minutes.springboot.tutorial.basics.example.aop.data.*.*(..))")
